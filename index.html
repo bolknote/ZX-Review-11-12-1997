@@ -1,0 +1,78 @@
+<title>ZX-REVIEW 11-12 1997</title>
+<style type="text/css">
+	body {
+		background: #1e1e1e;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.back {
+		display: none;
+		position: absolute;
+		margin-top: -28px;
+		margin-left: -16px;
+		font: 30px monospace;
+		width: fit-content;
+		height: fit-content;
+		text-decoration: none;
+		color: white;
+	}
+
+	#screen {
+		height: 384px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		width: 512px;
+		scrollbar-width: none;
+		border: 20px solid black;
+	}
+	#screen::-webkit-scrollbar {
+		width: 0;
+	}
+	img {
+		display: none;
+		position: relative;
+		width: 512px;
+	}
+	#menu {
+		display: initial;
+		position: absolute;
+		height: 384px;
+	}
+
+	:target img, :target .back {
+		display: initial;
+	}
+
+	.disk {
+		height: 384px;
+		position: absolute;
+	}
+</style>
+<div id="screen"><img id="menu" src="menu.jpg" usemap="#menu">
+<div id="1"><a href="#" class="back">←</a><img src="1.jpg" oading="lazy"></div>
+<div id="2"><a href="#" class="back">←</a><img src="2.jpg" loading="lazy"></div>
+<div id="3"><a href="#" class="back">←</a><img class="disk" src="disk.jpg" loading="eager"><img src="3_1.jpg" loading="lazy"><img src="3_2.jpg" loading="lazy"></div>
+<div id="4"><a href="#" class="back">←</a><img class="disk" src="disk.jpg" loading="eager"><img src="4_1.jpg" loading="lazy"><img src="4_2.jpg" loading="lazy"></div>
+<div id="5"><a href="#" class="back">←</a><img src="5.jpg" loading="lazy"></div>
+<div id="6"><a href="#" class="back">←</a><img src="6.jpg" loading="lazy"></div>
+<div id="7"><a href="#" class="back">←</a><img class="disk" src="disk.jpg" loading="eager"><img src="7_1.jpg" loading="lazy"><img src="7_2.jpg" loading="lazy"></div>
+<div id="8"><a href="#" class="back">←</a><img src="8.jpg" loading="lazy"></div>
+<div id="9"><a href="#" class="back">←</a><img src="9.jpg" loading="lazy"></div>
+<div id="A"><a href="#" class="back">←</a><img src="A.jpg" loading="lazy"></div>
+<div id="B"><a href="#" class="back">←</a><img src="B.jpg" loading="lazy"></div>
+</div>
+<map name="menu">
+	<area shape="rect" coords="112, 112, 400, 128" href="#1">
+	<area shape="rect" coords="112, 130, 400, 146" href="#2">
+	<area shape="rect" coords="112, 160, 400, 176" href="#3">
+	<area shape="rect" coords="112, 178, 400, 192" href="#4">
+	<area shape="rect" coords="112, 194, 400, 210" href="#5">
+	<area shape="rect" coords="112, 212, 400, 224" href="#6">
+	<area shape="rect" coords="112, 226, 400, 240" href="#7">
+	<area shape="rect" coords="112, 242, 400, 256" href="#8">
+	<area shape="rect" coords="112, 258, 400, 272" href="#9">
+	<area shape="rect" coords="112, 274, 400, 290" href="#A">
+	<area shape="rect" coords="112, 292, 400, 304" href="#B">
+	<area shape="rect" coords="112, 318, 400, 336" href="catalog.html">
+</map>

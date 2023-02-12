@@ -1,0 +1,72 @@
+<title>ZX-REVIEW 11-12 1997</title>
+<style type="text/css">
+	body {
+		background: #1e1e1e;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.back {
+		display: none;
+		position: absolute;
+		margin-top: -28px;
+		margin-left: -16px;
+		font: 30px monospace;
+		width: fit-content;
+		height: fit-content;
+		text-decoration: none;
+		color: white;
+	}
+
+	#screen {
+		height: 384px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		width: 512px;
+		scrollbar-width: none;
+		border: 20px solid black;
+	}
+	#screen::-webkit-scrollbar {
+		width: 0;
+	}
+	img {
+		display: none;
+		position: relative;
+		width: 512px;
+	}
+	#menu {
+		display: initial;
+		position: absolute;
+		height: 384px;
+	}
+
+	:target img, :target .back {
+		display: initial;
+	}
+
+	.disk {
+		height: 384px;
+		position: absolute;
+	}
+</style>
+<div id="screen"><img id="menu" src="catalog.jpg" usemap="#menu">
+<div id="1"><a href="#" class="back">←</a><img src="c1.jpg" oading="lazy"></div>
+<div id="2"><a href="#" class="back">←</a><img src="c2.jpg" loading="lazy"></div>
+<div id="3"><a href="#" class="back">←</a><img src="c3.jpg" loading="lazy"></div>
+<div id="4"><a href="#" class="back">←</a><img src="c4.jpg" loading="lazy"></div>
+<div id="5"><a href="#" class="back">←</a><img src="c5.jpg" loading="lazy"></div>
+<div id="6"><a href="#" class="back">←</a><img src="c6.jpg" loading="lazy"></div>
+<div id="7"><a href="#" class="back">←</a><img class="disk" src="disk.jpg" loading="eager"><img src="c7_1.jpg" loading="lazy"><img src="c7_2.jpg" loading="lazy"></div>
+<div id="8"><a href="#" class="back">←</a><img class="disk" src="disk.jpg" loading="eager"><img src="c8_1.jpg" loading="lazy"><img src="c8_2.jpg" loading="lazy"></div>
+</div>
+<map name="menu">
+	<area shape="rect" coords="112, 112, 400, 127" href="#1">
+	<area shape="rect" coords="112, 130, 400, 144" href="#2">
+	<area shape="rect" coords="112, 146, 400, 160" href="#3">
+	<area shape="rect" coords="112, 162, 400, 176" href="#4">
+	<area shape="rect" coords="112, 178, 400, 192" href="#5">
+	<area shape="rect" coords="112, 194, 400, 208" href="#6">
+	<area shape="rect" coords="112, 210, 400, 224" href="#7">
+	<area shape="rect" coords="112, 226, 400, 240" href="#8">
+	<area shape="rect" coords="112, 258, 400, 272" href="index.html">
+</map>
